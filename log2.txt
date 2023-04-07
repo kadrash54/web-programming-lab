@@ -1,0 +1,77 @@
+commit e60056d9eff7af4fede8fc5bb4b030552d78c972
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Sat Apr 8 00:51:47 2023 +0700
+
+    Конец
+
+commit 7ad802d0a4a8ea852d0c223e4d1bbedcd2d98d0e
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Sat Apr 8 00:18:19 2023 +0700
+
+    Переход для ссылок
+
+commit cc99427e45727248a639fdc3cb4f9e00c121f8f8
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Sat Apr 8 00:01:49 2023 +0700
+
+    Тени
+
+commit 36bb010db5e4b2b5fafdbfcb52cd800f6bbbcbe5
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 23:24:59 2023 +0700
+
+    Градиенты
+
+commit b8a793b1733ce367a6ed708bf8b07533fd900188
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 22:58:06 2023 +0700
+
+    Переход для формул
+
+commit 35e5d1967660ff185b24df86740d0a448b793335
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 22:50:04 2023 +0700
+
+    Прозрачность
+
+commit dc41a8ef137e9fac0c6bbfbf0d5e726c5664458e
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 22:35:42 2023 +0700
+
+    Текст про формулу
+
+commit ad5096f32260e4ede33ee211ae0fe715b1e14e5b
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 21:56:29 2023 +0700
+
+    Заготовка к третьей лабораторной
+
+commit c10a8536189e91e827e90ea507ed8eb27c3fa0dd
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 21:52:28 2023 +0700
+
+    Лаба 3 создание
+
+commit 897340dc98c91b709e7ca3e79000c869157dd2de
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 21:34:02 2023 +0700
+
+    Стили ссылок
+
+commit e9ae4e086c612f782d963c69890a1f91ae505fcb
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 21:12:25 2023 +0700
+
+    Стили меню
+
+commit 3d2d1c2392deabe621bd90eb8dda7f9be9861d09
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 20:51:36 2023 +0700
+
+    Стили меню
+
+commit cf2ccebb0e6bafd2ada5751dcaf593b944c21d4b
+Author: Кадралеев Кирилл <kadraleev.kirill@gmail.com>
+Date:   Fri Apr 7 19:39:58 2023 +0700
+
+    Лабораторная работа 3
