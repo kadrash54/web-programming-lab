@@ -7,15 +7,34 @@ body {
 header {
     background: linear-gradient( red, orange, yellow, green, #81d4fa, darkblue, purple);
     color: lightgreen;
-    padding: 10 px;
     font-size: 16pt; 
 }
+header:hover{
+    color: white;
+    background: linear-gradient(white, blue, red);
+    font-size: 10pt;
+}
+header:active{
+    color: white;
+    background: red;
+    font-size: 30pt;
+} 
 footer {
-    background-color: black;
+    background: linear-gradient( red, orange, yellow, green, #81d4fa, darkblue, purple);
     color: lightgreen;
     padding: 10px;
     font-size: 16pt;
     text-align: right;
+}
+footer:hover{
+    color: white;
+    background: linear-gradient(white, blue, red);
+    font-size: 40pt
+}
+footer:active{
+    color: blueviolet;
+    background: white;
+    font-size: 40pt
 }
 a {
     transition: all 0.6s ease;
