@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    color: maroon;
+    font-family: Arial;
+    margin: 0px;
+}
+header {
+    background-color: black;
+    color: lightgreen;
+    padding: 10 px;
+    font-size: 16pt; 
+}
+footer {
+    background-color: black;
+    color: lightgreen;
+    padding: 10px;
+    font-size: 16pt;
+    text-align: right;
+}
+main {
+    text-decoration: none; 
+    color: green;
+}
+/*header {
+    background-color: black; 
+    color: lightgreen; 
+    padding: 20px; 
+    font-size: 16pt
+}*/
+/*footer {
+    background-color: black ; 
+    color: lightgreen; 
+    font-size: 16pt; 
+    padding: 10px;
+    font-style: italic;text-align: right;
+}*/
