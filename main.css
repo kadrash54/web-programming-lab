@@ -5,7 +5,7 @@ body {
     margin: 0px;
 }
 header {
-    background-color: black;
+    background: linear-gradient( red, orange, yellow, green, #81d4fa, darkblue, purple);
     color: lightgreen;
     padding: 10 px;
     font-size: 16pt; 
@@ -17,19 +17,22 @@ footer {
     font-size: 16pt;
     text-align: right;
 }
-a{
+a {
+    transition: all 0.6s ease;
     text-decoration: none; 
     color: green;
 }
-a:visited{
+a:visited {
     color: yellow;
     background-color: green;
 }
-a:hover{
+a:hover {
     color: red;
     text-decoration: underline;
     background-color: white;
     font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 4px 3px 2px blueviolet;
 }
 a:active {
     color: pink;
