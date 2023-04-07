@@ -36,6 +36,19 @@
             margin-left: 2cm;
             text-indent: 0;
         }
+        .shadow {
+            text-shadow: 5px 5px 2px gray;
+        }
+        .shadow2{
+            text-shadow: -10px 5px 2px blue;
+        }
+        .shadow-razmit{
+            text-shadow: 0px 0px 2px blue;
+        }
+        .shadow-zagolov:hover{
+            text-shadow: 10px 5px 2px grey;
+            transition: 600ms 0.5s;
+        }
         .formula:hover{
             opacity: 1;
             color: darkblue;
@@ -48,7 +61,7 @@
     </header> 
 
     <main>
-            <h1>Расчет (формула)</h1>
+            <h1 class="shadow-zagolov">Расчет (формула)</h1>
     <div>
         Расчет сводится к определению разницы между активами и пассивами
     (обязательствами), которые определяются следующим образом.
@@ -94,6 +107,9 @@
     <div class="formula formula:hover">
         Чистые активы = стр.1300 - ЗУ + ДБП
     </div>
+    <div class="shadow">Тень</div>
+    <div class="shadow2">Синяя тень слева снизу</div>
+    <div class="shadow-razmit">Синее размытие</div>
     </main>
     <footer>
         &copy; Кирилл Кадралеев, ФБИ-11, 2 курс, 2023
