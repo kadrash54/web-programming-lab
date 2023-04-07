@@ -17,10 +17,25 @@ footer {
     font-size: 16pt;
     text-align: right;
 }
-main {
+a{
     text-decoration: none; 
     color: green;
 }
+a:visited{
+    color: yellow;
+    background-color: green;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+    background-color: white;
+    font-weight: bold;
+}
+a:active {
+    color: pink;
+    background-color: green;
+}
+
 /*header {
     background-color: black; 
     color: lightgreen; 
