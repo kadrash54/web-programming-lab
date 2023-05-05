@@ -6,7 +6,7 @@
             let inputA = document.getElementById('numberA'); /*let-позволяет ввести переменную а*/
             let inputB = document.getElementById('numberB');
             
-            let a = parseInt(inputA.value);
+            let a = parseInt(inputA.value);// parseInt-перевод строку в число
             let b = parseInt(inputB.value);
             let result = a + b;
             alert('Сумма ' + a + 'и ' + b + 'равна ' + result); /*alert выводит на экран то что зададим*/
@@ -14,6 +14,33 @@
         function showAuthor() {
             let author = 'Авторы страницы:\n Кадралеев Кирилл Алексеевич и Раковский Матвей Борисович';
             alert(author);
+        }
+        function showRazn() {
+            let inputA = document.getElementById('numberA'); 
+            let inputB = document.getElementById('numberB');
+            
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a - b;
+            alert('Разность ' + a + 'и ' + b + 'равна ' + result); 
+        }
+        function showUmn() {
+            let inputA = document.getElementById('numberA'); 
+            let inputB = document.getElementById('numberB');
+            
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a * b;
+            alert('Произвидение ' + a + 'и ' + b + 'равна ' + result);   
+        }
+        function showDel() {
+            let inputA = document.getElementById('numberA'); 
+            let inputB = document.getElementById('numberB');
+            
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a / b;
+            alert('Деление ' + a + 'и ' + b + 'равна ' + result);   
         }
 
         showSum();
@@ -45,7 +72,10 @@
     <main>
         <label>Первое число: <input type="number" value="5154" id="numberA"></label><br>
         <label>Второе число: <input type="number" value="7891" id="numberB"></label><br>
-        <div class="message" onclick="showSum()">TНайти сумму чисел</div>
+        <div class="message" onclick="showSum()">Найти сумму чисел</div>
+        <div class="message" onclick="showRazn()">Найти разность чисел</div>
+        <div class="message" onclick="showUmn()">Найти произведение чисел</div>
+        <div class="message" onclick="showDel()">Найти деление чисел</div>
         <div class="message" onclick="showAuthor()">Узнать кто авторы страницы</div>
     </main>
 
