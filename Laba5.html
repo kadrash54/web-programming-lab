@@ -42,8 +42,27 @@
             let result = a / b;
             alert('Деление ' + a + 'и ' + b + 'равна ' + result);   
         }
-
-        showSum();
+        function changeOutput(buttonNum, backColor, textColor, borderChanger ) {
+            let output = document.getElementById('output');
+            output.innerHTML = 'Нажата кнопка ' + buttonNum;
+            output.style.backgroundColor = backColor;
+            output.style.color = textColor;
+            output.style.border = borderChanger;
+        }
+        function korzinaRachet() {
+            let inputApple = document.getElementById('apple'); 
+            let inputPear = document.getElementById('pear');
+            let inputOrange = document.getElementById('orange');
+            let inputMelon = document.getElementById('melon');
+            let apple = perseInt(inputApple.value)
+            let pear = perseInt(inputPear.value)
+            let orange = perseInt(inputOrange.value)
+            let melon = perseInt(inputMelon.value)
+            
+            let rashet = (apple * 80) + (pear * 150) + (orange *150) + (melon * 300)
+            document.getElementById("div").innerHTML="Общая цена: " + rashet;
+        }
+        //showSum();
     </script>
     <style>
         .message {
@@ -56,6 +75,20 @@
             height: 30px;
             position: relative;
             display: inline-block;      
+        }
+        #output {
+            border: 1px solid;
+            width: 300px;
+            height: 40px;
+        }
+        .korzina {
+            width: 500px;
+            height: 550px;
+            position: relative;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid;
+            border-radius: 7px;
         }
     </style>
     <meta charset="UTF-8">
@@ -77,6 +110,29 @@
         <div class="message" onclick="showUmn()">Найти произведение чисел</div>
         <div class="message" onclick="showDel()">Найти деление чисел</div>
         <div class="message" onclick="showAuthor()">Узнать кто авторы страницы</div>
+        <div>
+            <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'red', 'yellow', '2px black solid')">
+            <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'black', 'lime', '4px red solid')">
+            <input type="button" value="Кнопка 3" onclick="changeOutput(3, 'green', 'darkblue', '6px brown solid')">
+            <input type="button" value="Кнопка 4" onclick="changeOutput(4, 'black', 'white', '10px yellow solid')">
+        </div>
+
+        <div id="output"></div>
+    <div class="korzina">
+        <h1 style="text-align: center;">Корзина товаров</h1>
+        Яблоки(100р/шт):<br>
+        <input type="number" id="apple"></input><br>
+        Груши(80р/шт)<br>
+        <input type="number" id="pear"></input><br>
+        Апельсины(150р/шт)<br>
+        <input type="number" id="orange"></input><br>
+        Дыни(300р/шт)<br>
+        <input type="number" id="melon"></input><br>
+        <input type="button" value="Рассчитать" onclick="korzinaRachet"> 
+        <div id="div" style="color: red; position: relative;">
+        
+        </div>
+    </div>
     </main>
 
     <footer onclick="showAuthor()">
