@@ -2,6 +2,55 @@
 <html lang="ru">
 <head>
     <script>
+        function hideBlock1() {
+            let block = document.getElementById('block-1');
+            block.style.display = 'none';
+        }
+
+        function hideBlock2() {
+            block = document.getElementById('block-2');
+            block.style.display = 'none';
+        }
+
+        function hideBlock3() {
+            block = document.getElementById('block-3');
+            block.style.display = 'none';
+        }
+
+        function hideBlock4() {
+            block = document.getElementById('block-4');
+            block.style.display = 'none';
+        }
+
+        function hideBlock5() {
+            block = document.getElementById('block-5');
+            block.style.display = 'none';
+        }
+
+        function hideBlock6() {
+            block = document.getElementById('block-6');
+            block.style.display = 'none';
+        }
+
+        function hideBlock7() {
+            block = document.getElementById('block-7');
+            block.style.display = 'none';
+        }
+
+        function hideBlock8() {
+            block = document.getElementById('block-8');
+            block.style.display = 'none';
+        }
+
+        function hideBlock9() {
+            block = document.getElementById('block-9');
+            block.style.display = 'none';
+        }
+
+        function hideBlock10() {
+            block = document.getElementById('block-10');
+            block.style.display = 'none';
+        }
         function showSum() {
             let inputA = document.getElementById('numberA'); /*let-позволяет ввести переменную а*/
             let inputB = document.getElementById('numberB');
@@ -50,17 +99,19 @@
             output.style.border = borderChanger;
         }
         function korzinaRachet() {
-            let inputApple = document.getElementById('apple'); 
-            let inputPear = document.getElementById('pear');
-            let inputOrange = document.getElementById('orange');
-            let inputMelon = document.getElementById('melon');
-            let apple = perseInt(inputApple.value)
-            let pear = perseInt(inputPear.value)
-            let orange = perseInt(inputOrange.value)
-            let melon = perseInt(inputMelon.value)
-            
-            let rashet = (apple * 80) + (pear * 150) + (orange *150) + (melon * 300)
-            document.getElementById("div").innerHTML="Общая цена: " + rashet;
+            let apple = 100;
+            let pear = 80;
+            let orange = 150;
+            let melon = 300;
+            let valueApple = parseInt(totalA.value);
+            let valuePear = parseInt(totalB.value);
+            let valueOrange = parseInt(totalC.value);
+            let valueMelon = parseInt(totalD.value);
+            let total = apple * valueApple + pear * valuePear + orange * valueOrange + melon * valueMelon;
+            document.getElementById("Div").innerHTML = "Общая цена: " + total;
+        }
+        function wholePrice() {
+            print(total)
         }
         //showSum();
     </script>
@@ -82,13 +133,96 @@
             height: 40px;
         }
         .korzina {
-            width: 500px;
-            height: 550px;
-            position: relative;
-            padding: 5px;
-            margin: 5px;
-            border: 2px solid;
-            border-radius: 7px;
+            width: 350px;
+            height: 400px;
+            background-color: white;
+            border: 5px red ridge;
+            color: black;
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+        .price {
+            width: 100px;
+            height: 20px;
+            border: 1px black ridge;
+            color: black;
+            background-color: rgb(212, 209, 209);
+            display: inline-block;
+            text-align:center;
+            cursor: pointer;
+            position:relative;
+            right: 120px;
+        }
+
+        .fruit {
+            position:relative;
+        }
+        .sphere {
+            position: absolute;
+            border-radius: 50%;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: justify;
+            padding: 20px;
+            color: black;
+            line-height: 4.5;
+            text-indent: 34px;
+            top: 350px;
+            font-size:large;
+            width: 80px;
+            height: 80px;
+        }
+
+        .sphere-1 {
+            background-color: white;
+            left: 450px;
+        }
+
+        .sphere-2 {
+            background-color: red;
+            left: 575px;
+        }
+
+        .sphere-3 {
+            background-color: yellow;
+            left: 700px;
+        }
+
+        .sphere-4 {
+            background-color: brown;
+            left: 825px;
+        }
+
+        .sphere-5 {
+            background-color: green;
+            left: 950px;
+        }
+
+        .sphere-6 {
+            background-color: orange;
+            left: 1075px;
+        }
+
+        .sphere-7 {
+            background-color: blue;
+            left: 1200px;
+        }
+
+        .sphere-8 {
+            background: linear-gradient(red 0%, orange 14.2%, yellow 28.2%, green 42.6%, #81d4fa 71.4%, darkblue 85.6%, purple 100%);
+            left: 1325px;
+        }
+
+        .sphere-9 {
+            background: linear-gradient(black 25%, red 50%, yellow 90%);
+            border: 2px double white;
+            left: 1450px;
+        }
+
+        .sphere-10 {
+            background: linear-gradient(white 25%, blue 50%, red 90%);
+            left: 1575px;
         }
     </style>
     <meta charset="UTF-8">
@@ -119,20 +253,40 @@
 
         <div id="output"></div>
     <div class="korzina">
-        <h1 style="text-align: center;">Корзина товаров</h1>
-        Яблоки(100р/шт):<br>
-        <input type="number" id="apple"></input><br>
-        Груши(80р/шт)<br>
-        <input type="number" id="pear"></input><br>
-        Апельсины(150р/шт)<br>
-        <input type="number" id="orange"></input><br>
-        Дыни(300р/шт)<br>
-        <input type="number" id="melon"></input><br>
-        <input type="button" value="Рассчитать" onclick="korzinaRachet"> 
-        <div id="div" style="color: red; position: relative;">
-        
-        </div>
+        <h1>Корзина товаров</h1>
+            <label class="fruit" style="right: 65px">Яблоки (100р/шт): <br><input type="number" value="3" id="totalA"><br></label>
+            <br>
+            <label class="fruit" style="right: 65px">Груши (80р/шт): <br><input type="number" value="8" id="totalB"><br></label>
+            <br>
+            <label class="fruit" style="right: 65px">Апельсины (150р/шт): <br><input type="number" value="4" id="totalC"><br></label>
+            <br>
+            <label class="fruit" style="right: 65px">Дыни (300р/шт): <br><input type="number" value="1" id="totalD"><br></label>
+            <br>
+            <div class="price" onclick="korzinaRachet()">Рассчитать<br></div>
+            <br>
+            <br>
+            <div style="color: red; position: relative; right: 97px;" id="Div"></div>
     </div>
+    <div id="block-1" onclick="hideBlock1()" class="sphere sphere-1">1</div>
+
+            <div id="block-2" onclick="hideBlock2()" class="sphere sphere-2">2</div>
+
+            <div id="block-3" onclick="hideBlock3()" class="sphere sphere-3">3</div>
+
+            <div id="block-4" onclick="hideBlock4()" class="sphere sphere-4">4</div>
+
+            <div id="block-5" onclick="hideBlock5()" class="sphere sphere-5">5</div>
+
+            <div id="block-6" onclick="hideBlock6()" class="sphere sphere-6">6</div>
+
+            <div id="block-7" onclick="hideBlock7()" class="sphere sphere-7">7</div>
+
+            <div id="block-8" onclick="hideBlock8()" class="sphere sphere-8">8</div>
+
+            <div id="block-9" onclick="hideBlock9()" class="sphere sphere-9">9</div>
+
+            <div id="block-10" onclick="hideBlock10()" class="sphere sphere-10">10</div>
+
     </main>
 
     <footer onclick="showAuthor()">
