@@ -2,12 +2,14 @@
 <html lang="ru">
 <head>
     <script>
-        function ShowSum() {
+        function showSum() {
             let a = 5154; /*let-позволяет ввести переменную а*/
             let b = 7891;
             let result = a + b;
             alert('Сумма' + a + 'и' + b + 'равна' + result); /*alert выводит на экран то что зададим*/
         }
+
+        showSum();
     </script>
     <style>
         .message {
@@ -34,7 +36,7 @@
     </header>
     
     <main>
-        <div class="message">Сколько будет 5154+7891</div>
+        <div class="message" onclick="showSum()">Сколько будет 5154+7891</div>
         <div class="message">Узнать кто авторы страницы</div>
     </main>
 
