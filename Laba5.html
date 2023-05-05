@@ -6,7 +6,11 @@
             let a = 5154; /*let-позволяет ввести переменную а*/
             let b = 7891;
             let result = a + b;
-            alert('Сумма' + a + 'и' + b + 'равна' + result); /*alert выводит на экран то что зададим*/
+            alert('Сумма ' + a + 'и ' + b + 'равна ' + result); /*alert выводит на экран то что зададим*/
+        }
+        function showAuthor() {
+            let author = 'Авторы страницы:\n Кадралеев Кирилл Алексеевич и Раковский Матвей Борисович';
+            alert(author);
         }
 
         showSum();
@@ -31,16 +35,16 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
+    <header onclick="showAuthor()">
         НГТУ, ФБ, Лабораторная работа 5
     </header>
     
     <main>
         <div class="message" onclick="showSum()">Сколько будет 5154+7891</div>
-        <div class="message">Узнать кто авторы страницы</div>
+        <div class="message" onclick="showAuthor()">Узнать кто авторы страницы</div>
     </main>
 
-    <footer>
+    <footer onclick="showAuthor()">
         &copy; Кадралеев Кирилл Алексеевич, ФБИ-11, 2 курс, 2023
     </footer>
 </body>
