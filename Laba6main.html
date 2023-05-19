@@ -17,6 +17,18 @@
             padding: 8px;
             text-align: center;
         }
+    .rules {
+            border: 3px white solid;
+            border-radius: 30px;
+            width: 200px;
+            margin-left: 100px;
+            margin-bottom: 30px;
+            height: 60spx;
+            padding: 6px;
+            background-color:white;
+            padding-left: 6px;
+            text-align: left;
+    }
 </style>
     <script>
         let number;
@@ -61,6 +73,16 @@
             number= Math.floor(Math.random() * 100)+1;
 
         }
+        function showrules() {
+            let screens = document.getElementsByClassName('rules');
+            screens[0].style.display='none';
+            screens[1].style.display='block';
+        }
+        function closerules() {
+            let screens = document.getElementsByClassName('rules');
+            screens[1].style.display='none';
+            screens[0].style.display='block';
+        }
     </script>
 <body>
     <header>
@@ -94,6 +116,19 @@
                 <button onclick="again()">Сыграть еще раз</button>
             </div>
 
+        </div>
+
+        <div class="rules">
+            <button onclick="showrules()">Показать правила игры</button>
+        </div>
+        <div class="rules" style="display: none;">
+            <button onclick="closerules()">Скрыть правила</button><br>
+            1. Сначала нажмите на кнопку "сыграть в игру"<br>
+            2. Потом потом достаньте флягу с эстусом<br>
+            3. Потом возьмите свою кровь(мне плевать откуда)<br>
+            4. Потом влейте ее в эстус<br>
+            5. Потом выпейте содержимое фляги<br>
+            6. YOU DEAD<br> 
         </div>
     </main>
     <footer>
