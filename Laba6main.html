@@ -39,6 +39,30 @@
             padding: 8px;
             padding-bottom: 0px;
         }
+    .movingBlock {
+        display: flex;
+        width: 150px;
+        height: 150px;
+        border: 5px white solid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: burlywood;
+        color: black;
+        transition: 3s;
+    }
+    #block2 {
+            border: 3px gray solid;
+            width: 100px;
+            height: 71px;
+            color: white;
+            text-align: center;
+            margin: 35px;
+            padding: 8px;
+            background-color: lightcoral;
+            padding-bottom: 0px;
+            transition: 1s;
+        }
 </style>
     <script>
         let number;
@@ -119,6 +143,31 @@
                 document.getElementById('color-name').innerHTML= 'желтый'; 
             }
         }
+        let positionLeft = true;
+        function move() {
+            let position = document.getElementById('block');
+            if (positionLeft == true) {
+                position.style.transform = 'translateX(1000px) rotate(0)';
+                positionLeft = false;
+            }
+            else {
+                position.style.transform = 'translateX(0px) rotate(4turn)';
+                positionLeft = true;
+            }
+        }
+
+        function bigger() {
+            let block2 = document.getElementById('block2');
+            let sizeWidth = parseInt(block2.style.width);
+            if(sizeWidth<1001){
+                sizeWidth += 50;
+            }
+            else {
+                sizeWidth = 100
+            }
+            block2.style.width = sizeWidth + 'px';
+        }
+        
     </script>
 <body>
     <header>
@@ -169,8 +218,16 @@
         <div class="color" ondblclick="changeColor(this)">
             Цвет: <span id="color-name">желтый</span><br>
             Сделайте двойно щелчок, чтобы сменить.
+        </div>
+        <div class="movingBlock" id="block" onclick="move()">
+            Тыкни если не Анимешник
+        </div>
+        <div id="block2" onclick="bigger()">
+            BIGGER!</div>
+            <br>
     </main>
     <footer>
+        &copy; Кадралеев К.А. Раковский М.Б., ФБИ-11, 2курс, 2023
     </footer>`
 </body>
 </html>
