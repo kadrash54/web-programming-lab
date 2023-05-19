@@ -29,6 +29,16 @@
             padding-left: 6px;
             text-align: left;
     }
+    .color {
+            border: 3px gray solid;
+            width: 203px;
+            height: 71px;
+            background-color: yellow;
+            text-align: center;
+            margin: 35px;
+            padding: 8px;
+            padding-bottom: 0px;
+        }
 </style>
     <script>
         let number;
@@ -83,6 +93,32 @@
             screens[1].style.display='none';
             screens[0].style.display='block';
         }
+        function changeColor(div) {
+            if(div.style.backgroundColor=='yellow') {
+                div.style.backgroundColor='red';
+                div.style.color = 'purple';
+                document.getElementById('color-name').innerHTML= 'красный';
+            }
+            else if (div.style.backgroundColor=='red') {
+                div.style.backgroundColor='black';
+                div.style.color = 'white';
+                document.getElementById('color-name').innerHTML= 'черный'; 
+            }
+            else if (div.style.backgroundColor=='black') {
+                div.style.backgroundColor='green';
+                div.style.color = 'black';
+                document.getElementById('color-name').innerHTML= 'зеленый'; 
+            }
+            else if (div.style.backgroundColor=='green') {
+                div.style.backgroundColor='blue';
+                div.style.color = 'red';
+                document.getElementById('color-name').innerHTML= 'синий';
+            }
+            else {
+                div.style.backgroundColor = 'yellow';
+                document.getElementById('color-name').innerHTML= 'желтый'; 
+            }
+        }
     </script>
 <body>
     <header>
@@ -130,6 +166,9 @@
             5. Потом выпейте содержимое фляги<br>
             6. YOU DEAD<br> 
         </div>
+        <div class="color" ondblclick="changeColor(this)">
+            Цвет: <span id="color-name">желтый</span><br>
+            Сделайте двойно щелчок, чтобы сменить.
     </main>
     <footer>
     </footer>`
