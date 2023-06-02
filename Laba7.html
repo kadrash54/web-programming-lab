@@ -9,7 +9,7 @@
 </head>
 <script>
 let flag1 = true;
-function addBlocks() {
+function createblock() {
     if (flag1 == true) {
         let blocks = document.getElementById('blocks');
         for (let i = 0; i < 10; i++) {
@@ -53,7 +53,7 @@ function showExchange() {
 }
 
 let flag3 = true;
-function addTransparentBlocks() {
+function addTransBlocks() {
     if (flag3 == true) {
         let tBlocks = document.getElementById('transparent-blocks');
         for (let i = 1; i < 11; i++) {
@@ -72,7 +72,7 @@ function addTransparentBlocks() {
     flag3 = false;
 }
 
-function addSpheres() {
+function createSpheres() {
     let spheres = document.getElementById('spheres');
     let input = document.getElementById('user-spheres');
     let userSpheres = parseInt(input.value);
@@ -101,7 +101,7 @@ function addSpheres() {
 }
 
 let flag4 = true;
-function multiTable() {
+function proizTable() {
     if (flag4 == true) {
     let table = document.getElementById('table');
     for (let i = 13; i <= 33; i++) {
@@ -180,23 +180,23 @@ function stockTable() {
         alert1.innerHTML = 'Среднее значение: ' + stockAverage;
 
         //выводим минимальное значение
-        let minValue = Math.min.apply(0, stockPrice);
+        let minV = Math.min.apply(0, stockPrice);
         alert2 = document.getElementById('minValue');
         alert2.style.color = 'blue';
-        alert2.innerHTML = 'Минимальное значение: ' + minValue;
+        alert2.innerHTML = 'Минимальное значение: ' + minV;
 
         //выводим максимальное значение
-        let maxValue = Math.max.apply(0, stockPrice);
+        let maxV = Math.max.apply(0, stockPrice);
         alert3 = document.getElementById('maxValue');
         alert3.style.color = 'red';
-        alert3.innerHTML = 'Максимальное значение:' + maxValue;
+        alert3.innerHTML = 'Максимальное значение:' + maxV;
 }
 </script>
 <body>
-    
+
     <main>
         <br>
-        <button onclick="addBlocks()">Создать блоки</button>
+        <button onclick="createblock()">Создать блоки</button>
         <br>
         <br>
         <div id="blocks"></div>
@@ -211,7 +211,7 @@ function stockTable() {
         <div style="color: green" id="detail"></div>
         <br>
 
-        <button onclick="addTransparentBlocks()">Создать полупрозрачные блоки</button>
+        <button onclick="addTransBlocks()">Создать полупрозрачные блоки</button>
         <br>
         <br>
         <div id="transparent-blocks"></div>
@@ -219,14 +219,14 @@ function stockTable() {
 
 
         <input type="number" placeholder="введите число кругов" value="5"  max="1000" id="user-spheres">
-        <button onclick="addSpheres()">красное/желтое/зеленое</button>
+        <button onclick="createSpheres()">красное/желтое/зеленое</button>
         <br>
         <br>
         <div id="spheres"></div>
         <br>
         <br>
         
-        <button onclick="multiTable()">таблица умножения на 94<</button>
+        <button onclick="proizTable()">таблица умножения на 94<</button>
         <br>
         <br>
         <div id="table"></div>
@@ -236,11 +236,11 @@ function stockTable() {
         <button onclick="stockTable()">Курс акций ПАО "КАМАЗ"</button>
         <br>
         <br>
-        <table style="color:green" border="2" id="bigTable"</table>
+        <table style="color:green" border="2" id="bigTable"></table>
         <br>
         <div id="average"></div>
-        <div id="minValue"></div>
-        <div id="maxValue"></div>
+        <div id="minV"></div>
+        <div id="maxV"></div>
 
     </main>
     
